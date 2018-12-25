@@ -44,6 +44,7 @@ UserStoreRepo userRepo;
 		UserRepo savedUser=userRepo.findById(id).orElseThrow(()->new ResourceNotFoundException("UserRepo","id",id));
 		savedUser.setPoaFileID(receivedUser.getPoaFileID());
 		savedUser.setPoiFileID(receivedUser.getPoiFileID());
+		userRepo.save(savedUser);
 		return savedUser;
 	}
 
