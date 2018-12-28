@@ -4,9 +4,9 @@ spring:
   profiles: development
   ## Spring DATASOURCE (DataSourceAutoConfiguration & DataSourceProperties)
   datasource:
-    url: jdbc:postgresql://db:5432/postgres
-    username: postgres
-    password: asecurepassword
+#    url: jdbc:postgresql://db:5432/postgres
+    #username: postgres
+    #password: asecurepassword
     type: com.zaxxer.hikari.HikariDataSource
     hikari:
       maximum-pool-size: 5
