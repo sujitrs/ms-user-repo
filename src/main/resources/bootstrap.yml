@@ -1,0 +1,9 @@
+spring:
+  cloud:
+     config:
+        discovery:
+           enabled: true
+           serviceId: ms-config-server
+        #uri: http://ms-config-server/
+  application:
+     name: ms-user-repo
