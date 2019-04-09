@@ -1,4 +1,5 @@
-FROM openjdk:latest
+# ms-user-repo
+FROM openjdk:8-jdk-alpine
 VOLUME /tmp
 ARG DEPENDENCY=build/dependency
 COPY ${DEPENDENCY}/BOOT-INF/lib /app/lib

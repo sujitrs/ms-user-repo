@@ -3,7 +3,7 @@ server:
 spring:
   cloud:
      config:
-        uri: http://localhost:9999/ 
+        uri: http://localhost:9998/ 
   application:
      name: ms-user-repo
   profiles: development
